@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<html leng="en">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="widthdevice initial-scales1.0">
-    <link rel="stylesheet" href="style.css">
-    <tittle>158</tittle>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <title>158</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h3>pendaftaran peminatan</h3>
-        
-        </div>
-        <form action="">
-            <label for="Nama"></label><br>
-            <input type="text" placeholder="Masukan nama anda">
-
-            <label for="Nim"></label><br>
-            <input type="text" placeholder="Masukan NIM anda">
-
-            <p>Bidang peminatan :</p>
-
-            <input type="radio"name="peminatan" id="progaming" value="Progaming">
-            <label for="progaming">pemograman</label><br><br>
-
-            <input type="radio" name="peminatan" id="jaringan" value="jaringan">
-            <label for="progaming">pemograman</label><br><br>
-            <input type="radio" name="pemintan" id="Data" value="Data">
-            <label for="progaming">Data</label><br><br>
-
-            <input type="radio" name="peminatan" id="Design" value="Design">
-            <label for="progaming">Design</label><br><br>
-
-            <label for="">Alamat</label><br>
-            <textarea name="alamat" id="alamat" placeholder="Masukan alamat anda"
-                rows="5"></textarea><br><br>
-            <button type="submit"
-            onclik=" KirimData()">Kirim</button>
-
-            
-        </form>
+  <div class="container">
+    <div class="header">
+      <h3>Pendaftaran Peminatan</h3>
     </div>
-    <script src="script/script.js"></script>
-
-</body>
-
-</head>
+    <form action="">
+      <label for="nama">Nama</label><br>
+      <input type="text" placeholder="Nama anda" id="nama"><br><br>
+      <label for="nim">NIM</label><br>
+      <input type="text" placeholder="NIM anda" id="nim"><br><br>
+      <p>Peminatan pada bidang:</p>
+      <select id="peminatan"> 
+        <option value="programming">Programming</option>
+        <option value="desain">Desain</option>
+        <option value="jaringan">Jaringan</option>
+        <option value="data">Data</option>
+      </select><br><br>
+      <label for="tanggal">Tanggal Lahir</label><br>
+      <input type="date" id="tanggal"><br><br>
+      <label for="alamat">Alamat</label><br>
+      <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+      <button type="submit" onclick="kirimData()">Kirim</button>
+    </form>
+  <script src="script.js"></script> </body>
 </html>
