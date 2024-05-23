@@ -1,14 +1,21 @@
-function kirimData(){
-    var nama = document.getElementById("nama").value
-    var nim = getElementById("nim").value
-    var peminatan = document.querySelector("inpu[name=peminatan]:checked").value
-    var alamat = document.getElementById("alamat").value
-
+function kirimData() {
+    var name = document.getElementById("nama").value;
+    var nim = document.getElementById("nim").value;
+    var peminatan = document.getElementById("peminatan").value;
+    var tanggal = document.getElementById("tanggal").value;
+    var alamat = document.getElementById("alamat").value;
+  
+    // Format the data for display
     alert(
-        "Nama Mahasiswa : " + nama +
-        "\nNIM: " + Nim +
-        "\nPeminatan : " + peminatan +
-        "\nAlamat : "  + alamat 
-    )
-}
-       
+        "Nama : " + name +
+        "\nNIM : " + nim +
+        "\npeminatan : " + peminatan +
+        "\nAlamat : " + alamat
+    ) 
+   
+  
+    // Display the formatted data
+    var displayElement = document.getElementById("kirim-data");
+    displayElement.innerHTML = formattedData;
+  }
+  
